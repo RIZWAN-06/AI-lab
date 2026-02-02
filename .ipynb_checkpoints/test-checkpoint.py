@@ -1,1 +1,0 @@
-print("Nvim + Fedora + Git")
