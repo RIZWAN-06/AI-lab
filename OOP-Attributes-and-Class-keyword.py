@@ -66,15 +66,15 @@ class Circle():
     #class object attribute 
     pi = 3.14  #so regardless of instance of a Circle i make i'll always beable to referance Pi here as 3.14
 
-    def __init__(self,radious = 1): #seting radious default value 
-        self.radious = radious
+    def __init__(self,radius = 1): #seting radious default value 
+        self.radius = radius
         #attribute doesn't necessary have to be define from a particular call
-        self.area = radious*radious*self.pi   #Since Pi is a class object attribute we can simply call it by the name of the class
+        self.area = radius*radius*self.pi   #Since Pi is a class object attribute we can simply call it by the name of the class
 
 
-        #now lets make a method here 
+    #now lets make a method here 
     def get_circumference(self):
-        return self.radious*Circle.pi*2
+        return self.radius*Circle.pi*2
 
 
 #Let's create the instance
@@ -83,7 +83,7 @@ my_circle = Circle(30)  #We can provide value for radious
 #Let's call it 
 
 print(my_circle.pi)
-print(my_circle.radious) 
+print(my_circle.radius) 
 
 #now let's see how the Method is working
 print(my_circle.get_circumference())
