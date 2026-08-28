@@ -26,7 +26,7 @@ class Dog():
 my_dog = Dog(dogBreed = 'Huskie')
 print(my_dog.MyAttribute)
 
-#now let's create more attributes
+#now let's create more attributes/And Class Object attributes
 class Dog():
 
     #Class object attributes
