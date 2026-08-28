@@ -29,6 +29,9 @@ print(my_dog.MyAttribute)
 #now let's create more attributes
 class Dog():
     def __init__(self,breed,name,spots):
+        #attributes
+        #we take in the arguments
+        #assign it to self.attributes_name
         self.breed = breed
         self.name = name
         self.spots = spots  #here we are expecting boolean True/False
@@ -36,3 +39,7 @@ class Dog():
 my_dog = Dog(breed = 'Huskie', name = 'Sam', spots = False)
 
 print(my_dog.breed, my_dog.name, my_dog.spots)
+
+
+
+
