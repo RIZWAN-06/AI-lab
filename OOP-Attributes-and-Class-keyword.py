@@ -26,7 +26,7 @@ class Dog():
 my_dog = Dog(dogBreed = 'Huskie')
 print(my_dog.MyAttribute)
 
-#now let's create more attributes/And Class Object attributes
+#now let's create more attributes/And Class Object at
 class Dog():
 
     #Class object attributes
@@ -54,7 +54,7 @@ my_dog = Dog(breed = 'Huskie', name = 'Sam', spots = False)
 
 print(my_dog.breed, my_dog.name, my_dog.spots, my_dog.species)
 print(my_dog.species)
-print(my_dog.bark(20))
+my_dog.bark(20)
 
 
 
