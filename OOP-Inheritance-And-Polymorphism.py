@@ -105,3 +105,14 @@ felix = Cat("felix")
 print(niko.speak())
 print(felix.speak())
 
+
+
+#There are few different ways to demonstrate polymorphism 
+#one way is with "for Loop"
+
+for pet in [niko,felix]:  #Ican iterate through this list 
+    print(type(pet)) 
+    #let's see what happen when when you say pet.speak
+    print(type(pet.speak()))
+    #now lets remove type to see the actual string
+    print(pet.speak())
