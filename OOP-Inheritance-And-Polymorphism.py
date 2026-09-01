@@ -116,3 +116,39 @@ for pet in [niko,felix]:  #Ican iterate through this list
     print(type(pet.speak()))
     #now lets remove type to see the actual string
     print(pet.speak())
+
+#another way is with "function" and this is probably most common way 
+
+def pet_speak(pet):
+    print(pet.speak())
+
+#Let's run this 
+pet_speak(niko)
+
+
+
+
+#More common practice is to use Abstract classes and Inheritance is only as a Base class.
+#because it's only serve as a base class.
+
+#Let's see an example, and it's more common in polymorphism
+class Animal():
+    def __init__(self,name):
+        self.name = name
+
+    def speak(self):
+        raise NotImplementedError("Subclass must implement this Abstract method")
+
+#It expect you to inherit the Animalclass and then overwrite the speak method
+
+class Dog(Animal):
+    def speak(self):
+        return self.name + " says WOOF!"
+        #now you no longer need to have that init method here, instead you can simply say "def speak self"
+
+
+#let's run this
+fido = Dog("fido")
+print(fido.speak())
+
+
