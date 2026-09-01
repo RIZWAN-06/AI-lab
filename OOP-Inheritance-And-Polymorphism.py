@@ -78,6 +78,6 @@ mydog.bark()
 
 
 
-#POLYMORPHISM ---> In python POLYMORPHISM refer to the way in which different object classes can share the same methods and then those methods can be called from the same place, even tho varity of different 
+#POLYMORPHISM ---> In python POLYMORPHISM refer to the way in which different object classes can share the same methods and then those methods can be called from the same place, even tho varity of different objects might be passed in. 
 
 
