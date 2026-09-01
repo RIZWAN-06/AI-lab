@@ -31,5 +31,53 @@ class Dog(Animal): #Before we never passed any argument but if pass in an Animal
     #I'm going to create an instance of the Animal class
     def __init__(self):
         Animal.__init__(self)
+        print("Dog created")
+
+
+
+mydog = Dog()
+
+#now all those old methods that were available for Animal, are now available for mydog
+mydog.eat()
+
+
+#We can also overwrite order methods
+
+class Dog(Animal):
+    def __init__(self):
+        Animal.__init__(self)
+        print("Dog created")
+
+    #overwrite Method 
+    def who_am_i(self):
+        print('I Am A Dog!')
+
+#Let's run this 
+
+mydog = Dog()
+mydog.eat()
+mydog.who_am_i()
+
+#you are also able to add new methods
+class Dog(Animal):
+    def __init__(self):
+        Animal.__init__(self)
+        print("Dog created")
+ 
+    def who_am_i(self):
+        print('I Am A Dog!')
+    
+    #new methods
+    def bark(self):
+        print("WOOF!")
+
+
+#let's run this
+mydog = Dog()
+mydog.bark()
+
+
+
+#POLYMORPHISM ---> In python POLYMORPHISM refer to the way in which different object classes can share the same methods and then those methods can be called from the same place, even tho varity of different 
 
 
