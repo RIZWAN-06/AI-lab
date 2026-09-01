@@ -149,6 +149,8 @@ class Dog(Animal):
 
 #let's run this
 fido = Dog("fido")
-print(fido.speak())
+luk = Cat("luk")
 
+print(fido.speak())
+print(luk.speak())
 
