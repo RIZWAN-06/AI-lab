@@ -154,3 +154,5 @@ luk = Cat("luk")
 print(fido.speak())
 print(luk.speak())
 
+#WE USE POLYMORPHISM IN OPENING DIFFERENT FILE TYPE SUCH AS {PDF, TXT, ETC}
+
